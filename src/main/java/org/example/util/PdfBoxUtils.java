@@ -87,6 +87,7 @@ public class PdfBoxUtils {
                                        float imageScala, float offsetX, float offsetY) {
         try {
             PDDocument doc = PDDocument.load(new File(inputFilePath));
+            //如图片在jar包中，这里可能无法用文件去读取。请调整使用 PDImageXObject.createFromByteArray 方式去读取图片
             PDImageXObject pdImage = PDImageXObject.createFromFile(imagePath, doc);
             PdfBoxKeyWordPosition pdf = new PdfBoxKeyWordPosition(keyWords, inputFilePath);
             PDPageContentStream contentStream;
