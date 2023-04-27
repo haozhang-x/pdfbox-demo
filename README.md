@@ -7,4 +7,4 @@
 3. 合并文字（支持坐标调整）
 
 
-具体的使用，见 org.example.util.PdfBoxUtilsTest
+具体的使用，见 [PdfBoxUtilsTest](https://github.com/haozhang-x/pdfbox-demo/blob/main/src/test/java/org/example/util/PdfBoxUtilsTest.java)
